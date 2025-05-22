@@ -1,0 +1,27 @@
+language: "en-US"
+early_access: false
+reviews:
+  profile: "chill"
+  request_changes_workflow: true
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+  auto_review:
+    enabled: true
+  path_instructions:
+    - path: "**/*.java"
+      instructions: |
+        Event loop instances should be set to twice the number of available processors.
+        can the vertx event loop be blocked anywhere?
+        Are the vertx standards followed here?
+        Is the code formatting done as per expectation
+        Is the code modular?
+        Is the code reusable?
+        Are the naming conventions consistent for variables and classes?
+        Are client connections being closed in the end?
+        Rest endpoints path should start with versions
+        Mysql query plans should be optimised
+        Only use github actions, no jenkins jobs
+chat:
+  auto_reply: true
