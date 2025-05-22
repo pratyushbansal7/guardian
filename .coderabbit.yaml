@@ -1,0 +1,17 @@
+language: "en-US"
+early_access: false
+reviews:
+  profile: "chill"
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+  auto_review:
+    enabled: true
+  path_instructions:
+    - path: "**/*.java"
+      instructions: |
+        Event loop instances should be 2x available Processors
+chat:
+  auto_reply: true
